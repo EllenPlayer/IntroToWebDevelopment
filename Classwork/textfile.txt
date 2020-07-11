@@ -1,0 +1,2 @@
+Adding a notepad to the file to be able to convey the folder to GitHub
+ 
