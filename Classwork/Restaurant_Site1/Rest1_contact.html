@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<!--
+    Name: Ellen Player
+    Date Created: 12/07/2020 
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact Us- Players student diner</title>	
+    </head> 
+    
+    <body>
+		<header>
+			<p>Contact Us</p>
+			<hr />
+            <h1>Players student diner</h1>
+        </header>
+        <nav>
+			<hr />
+			<a href="Rest1_homepage.html">Home</a>
+			<a href="Rest1_menu.html">Menu</a>
+			<a href="">Contact Us</a>
+			<hr />
+        </nav>
+		<section>
+			<form>
+				<label for="Name"> Name: </label>
+				<input type="text" id="Name" name="Name">
+				<br />
+				<label for="email"> Email: </label>
+				<input type="text" id="email" name="email">
+				<br />
+				<label for="phone"> Phone: </label>
+				<input type="text" id="phone" name="phone">
+				<br />
+				<label for="reason"> Reason for Inquiry: </label>
+				<select id="reason" name="reason">
+					<option value="Catering" selected>Catering</option>
+					<option value="private">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="Other">Other</option>
+				</select>
+				<br />
+				<label for="info">Additional Information</label><br />
+				<textarea id="info" name="info"></textarea>
+				<br />
+				<label for="history"> Have you been to the restaurant? </label>
+				<input type="radio" id="choice1" name="history" value="No" checked>
+				<label for="choice1">No</label>
+				<input type="radio" id="choice2" name="history" value="Yes">
+				<label for="choice2">Yes</label>
+				<br />
+				<!--Example of checkboxes-->
+					<legend>Best days to contact you:</legend>
+						<input type="checkbox" id="mon" name="interest" value="mon">
+						<label for="mon">M</label>
+						
+						<input type="checkbox" id="tues" name="interest" value="tues">
+						<label for="tues">T</label>
+						
+						<input type="checkbox" id="wed" name="interest" value="wed">
+						<label for="wed">W</label>
+						
+						<input type="checkbox" id="thurs" name="interest" value="thurs" >
+						<label for="thurs" >Th</label>
+						
+						<input type="checkbox" id="fri" name="interest" value="fri">
+						<label for="fri">F</label><br />
+				
+				
+				<input type="submit" name="submit" value="Submit">				
+			</form>
+		</section>
+
+        <footer>
+		<hr />
+			<label for="address"> Cheep food way, London, Greater London, SW62RS</label><br />
+			<label for="number"> 01372 890 421</label>
+        </footer>
+    </body> 
+</html>
