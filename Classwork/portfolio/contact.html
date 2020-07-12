@@ -15,13 +15,61 @@
         </header>
 
         <nav>
+		<hr />
 			<p> <a href="index.html">Home</a></p>
+		<hr />	
         </nav>
+		
 		<Section>
 		<article>
-		<p>P. +44 7486 910 972 </p>  
-		<p>E. ellen.player18@imperial.ac.uk </p> 
-		<p>LinkedIn:  <a href="https://www.linkedin.com/in/ellen-player-2000/" target="_blank">www.linkedin.com/in/ellen-player-2000 </a></p>
+			<p>P. +44 7486 910 972 </p>  
+			<p>E. ellen.player18@imperial.ac.uk </p> 
+			<p>LinkedIn:  <a href="https://www.linkedin.com/in/ellen-player-2000/" target="_blank">www.linkedin.com/in/ellen-player-2000 </a></p>
+		</article>
+		<article>
+			<h2>Information request </h2>
+			<form action="submit.html" method="POST"> <!--Creation of interactive form-->
+				<label for="firstName"> First Name:</label><br />
+				<input type="text" id="firstName" name="firstName"><br />
+				
+				<label for="lastName">Last Name:</label><br />
+				<input type="text" id="lastName" name="lastName"><br />
+				
+				<label for="phone">Phone Number:</label><br />
+				<input type="text" id="phone" name="phone"><br />
+				
+				<label for="contact"> Best time to call:</label><br />
+				
+				<select id="contact" name="contact">
+					<option value="default" selected>--Select One--</option>
+					<option value="morning">Morning (8AM to 12PM Eastern)</option>
+					<option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+					<option value="evening">Evening (5PM to 8PM Eastern)</option>
+				</select>
+				<fieldset><!--Example of checkboxes-->
+					<legend>I am interested in (check all that apply)</legend><br />
+						<input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+						<label for="frontEnd">Front End Web Development</label><br />
+						
+						<input type="checkbox" id="backEnd" name="interest" value="backEnd">
+						<label for="backEnd">Back End Web Development</label><br />
+						
+						<input type="checkbox" id="database" name="interest" value="database">
+						<label for="database">Database Design</label><br />
+				</fieldset>
+				<fieldset><!--Example of radio buttons-->
+					<legend>I have filled in the client questionnaire form:</legend>
+						<input type="radio" id="choice1" name="questionnaire" value="yes">
+						<label for="choice1">Yes</label><br />
+						
+						<input type="radio" id="choice2" name="questionnaire" value="no">
+						<label for="choice2">No</label><br />
+				</fieldset>
+				<label for="info">Additional Information</label><br />
+				<textarea id="info" name="info"></textarea>
+				<!--A submition button for prospective employers to submit there intrest request-->
+				<input type="submit" name="submit" value="Submit">
+			</form>
 		</article>
 		</section>
 
