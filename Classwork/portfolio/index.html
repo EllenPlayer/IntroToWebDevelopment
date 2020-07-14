@@ -8,6 +8,7 @@ Most recent revision: 12/07/2020
 <head>
 	<title> Ellen's Portfolio</title>
 	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+	<link href="styles/float.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -51,6 +52,7 @@ Most recent revision: 12/07/2020
 			<p> <a href="projects.html">Projects</a></p>
 			<p> <a href="contact.html">Contact</a></p>
 			<p> <a href="testimonials.html">Testimonials</a></p>
+			<div class="clear-float"></div>
 			<!--<hr />-->
 		</nav>
 		
@@ -60,25 +62,27 @@ Most recent revision: 12/07/2020
 		
 		<article id="About-me">
 			<h2> <em>About Me</em></h2>
-			<a href="https://www.linkedin.com/in/ellen-player-2000/" target="_blank"><img src="images/Ellen_Profile1.jpg" alt="A professional photograph of Ellen Player"/></a>
+			<a href="https://www.linkedin.com/in/ellen-player-2000/" target="_blank">
+			<img src="images/Ellen_Profile1.jpg" alt="A professional photograph of Ellen Player" /></a>
 			<p> I am a penultimate year <strong> MEng Chemical Engineering Student</strong> at <strong>Imperial College London.</strong> 
 			Passionate about creating change and improving preexisting ideas; I plan to accomplish this by improving efficiency on both a physical level and also by leveraging the power of new technology such as computers to optimise processes.
 			This is what will be needed in the future to protect the environment for the future whilst keeping the needs and production of today. </p>
 			<p>I am a fast learner who sticks to deadlines, producing high quality work and new ways of thinking. I have a keen interst in nanotechnology and its potential widespread application to the future.</p>
+			<div class="clear-float"></div>
 		</article>
 		
 		<article id="Past-experiences">
 			<h2><em>Past experiences</em> </h2>
 			
 			<img src="images/Rig_building.jpg" alt="Ellen Player in a team working on a Laboratory project"/>
-			
+			<div class="right-content">
 			<table>
 				<caption> Employment History </caption>
 				<thead>
 					<tr>
 						<th>Timeframe</th>
 						<th>Title</th>
-						<th>Company</th>`
+						<th>Company</th>
 						<th>Breif Description</th>
 					</tr>
 				</thead>
@@ -104,12 +108,15 @@ Most recent revision: 12/07/2020
 					</tr>
 				</tbody>
 			</table>
-			<p> This list is not exhastive and is intended as a practice for HTML programming </p>
+			</div>
+			<div class="clear-float"></div>
+			<p> *This list is not exhastive and is intended as a practice for HTML programming </p>
 		</article>
 		
 		<article id="Hobbies">
 			<h2><em>Hobbies</em></h2>
-			<img src="images/OSIsoft_Visit.jpg" alt="Ellen delivering a presentation on a front end data display project"/>
+			<img src="images/OSIsoft_Visit.jpg" alt="Ellen delivering a presentation on a front end data display project" />
+			<div class="right-content">
 			<ul>       <!-- This indicates unordered list-->
 				<li> University clubs and Societies </li>
 				<ol>   <!-- This indicates ordered list -->
@@ -121,7 +128,7 @@ Most recent revision: 12/07/2020
 				<li> <strong>Game building</strong>- Using Unity </li>
 				</ol>
 			</ul>
-			<p>Relevant Training</p>
+			<p>	Relevant Training</p>
 			<ul>
 				<li>Coding </li>
 				<ul>
@@ -135,6 +142,8 @@ Most recent revision: 12/07/2020
 				<li>10 Years service Army Cadet Force</li>
 				</ul>
 			</ul>
+			</div>
+		<div class="clear-float"></div>
 		</article>
 		
 		</section>

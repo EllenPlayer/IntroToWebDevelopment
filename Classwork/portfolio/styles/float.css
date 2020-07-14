@@ -1,0 +1,16 @@
+/*
+Creator: Ellen Player
+Date created: 14/07/2020
+Date last modified: 
+*/
+.clear-float {
+    clear:both;
+}
+article img {
+   float:left;
+   width:300px
+}
+.right-content {
+    float:left;
+	max-width: 550px;
+}
