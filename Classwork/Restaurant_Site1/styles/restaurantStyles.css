@@ -1,0 +1,90 @@
+/*
+Creator: Ellen Player
+Date created: 18/07/2020
+Date last modified: 
+*/
+body {
+    background-color: #ffe292;
+    font-family: Tahoma, helvetica, sans-serif;
+    color: #0d1f2d;
+	max-width: 1200px;
+	margin: 0 auto;
+}	
+header,footer {
+    background-color: #013a33;
+    color: #ffffff;
+	height: 160px;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	font-family: 'Anton',helvetica, sans-serif;
+	font-variant: small-caps;
+}
+h1 {
+    font-size: 2.5em;
+}
+p{
+	margin:10px;
+	font-size: 15px;
+}
+article a{
+	color: #b5222d; /*When I click the link and refresh the page it doesnt go back to the old color its overided by the white. Need to change*/
+	margin:20px;
+	text-decoration: underline;
+} 
+article a:hover {
+	font-weight: bold;
+} 
+article a:active {
+	text-decoration: none;
+} 
+article a:visited {
+	color: #ffffff;
+} 
+/*Navigation Elements*/
+nav {
+    border-top: 2px dashed #546a7b;
+    border-bottom: 2px dashed #546a7b;
+	background-color:#f6d7d5;
+}
+nav a {
+    background-color: #013a33;
+    color: #ffffff;
+    padding: 4px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+	display: block;
+	margin: 3px;
+	width: 80px;
+	float: left;
+}
+nav a:visited {
+    color: #e4c3ad; 
+}
+nav a:hover {
+    background-color: #ffffff;
+    color: #013a33; 
+}
+nav a:active {
+    font-weight: bold;
+}
+/*Ending Floats*/
+.clear-float {
+    clear:both;
+}
+/*Moving artices*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top:10px;
+}
+article img {
+   float:center;
+   width:500px;
+}
+.right-content {
+    float:left;
+	max-width: 550px;
+}

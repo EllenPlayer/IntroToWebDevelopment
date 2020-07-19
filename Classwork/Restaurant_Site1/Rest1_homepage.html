@@ -6,33 +6,70 @@
 -->
 <html lang="en"> 
     <head> 
-        <title>Players student diner</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+        <title>Players student diner</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<style>
+			nav {
+				border-top: 2px dashed #546a7b;
+				border-bottom: 2px dashed #546a7b;
+				background-color:#f6d7d5;
+			}
+			nav .btn{
+				background-color: #013a33;
+				color: #ffffff;
+				padding: 4px;
+				border: thin solid #0d1f2d;
+				text-decoration: none;
+				text-align: center;
+				display: block;
+				margin: 3px;
+				width: 100px;
+				float: left;
+			}
+			nav .btn:hover {
+				background-color: #ffffff;
+				color: #013a33; 
+			}
+			body {
+				background-color: #ffe292;
+				font-family: Tahoma, helvetica, sans-serif;
+				color: #0d1f2d;
+				max-width: 1200px;
+				margin: 0 auto;
+			}	
+		</style>
     </head> 
     
     <body>
         <header>
 			<p>Home Page</p>
 			<hr />
-            <h1>Players student diner</h1>
+            <h1>Player's student diner</h1>
         </header>
 
-        <nav>
-			<hr />
-			<a href="">Home</a>
-			<a href="Rest1_menu.html">Menu</a>
-			<a href="Rest1_contact.html">Contact Us</a>
-			<hr />
-        </nav>
+		<div class="container-fluid">
+			<nav>
+				<a class="btn badge-pill" href="">Home</a>
+				<a class="btn badge-pill" href="Rest1_menu.html">Menu</a>
+				<a class="btn badge-pill" href="Rest1_contact.html">Contact Us</a>
+				<div class="clear-float"></div>	
+			</nav>
 		
 		<section>
-			<img src="images/rice.jpg" alt="A picture of our award winning vegatable fried rice" style="border.thick red ; width:300px;">
 			<article>
-				<p>Players is a stunning diner situated in the heart of London. Serving student classic meals for a friendly budget wilst still having fantastic flavours. Players is like no other restaurant.</p>
+				<img src="images/rice.jpg" alt="A picture of our award winning vegatable fried rice" style="border: thick solid green ; max-width:600px;" class="center">
+				<p>Players is a stunning diner situated in the heart of London. Serving student classic meals for a friendly budget whilst still having fantastic flavours. Players is like no other restaurant.</p>
+				<div class="clear-float"></div>
 			</article>
 			<article>
 				<p><strong>Read a recent review!</strong></p>
 				<!--A real review link for a reastaurant with a similar name but this is only a mock website and not affiliated to the link-->
-				<a href="https://www.just-eat.co.uk/restaurants-players---rochdale-rochdale/reviews" target="_blank">--4.5 stars out of 6--</a>
+				<a href="https://www.just-eat.co.uk/restaurants-players---rochdale-rochdale/reviews" target="_blank" id="rating">--4.5 stars out of 6--</a>
+			<div class="clear-float"></div>
 			</article>
 		</section>
 
@@ -42,5 +79,11 @@
 			<label for="address"> Cheep food way, London, Greater London, SW62RS</label><br />
 			<label for="number"> 01372 890 421</label>
         </footer>
+		</div>
+			<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+	
     </body> 
 </html>

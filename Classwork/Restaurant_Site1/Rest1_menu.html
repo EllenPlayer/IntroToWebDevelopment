@@ -5,8 +5,49 @@
     Most recent revision:
 -->
 <html lang="en"> 
-    <head> 
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
         <title>Menu- Players student diner</title>	
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<style>
+			nav {
+				border-top: 2px dashed #546a7b;
+				border-bottom: 2px dashed #546a7b;
+				background-color:#f6d7d5;
+			}
+			nav .btn{
+				background-color: #013a33;
+				color: #ffffff;
+				padding: 4px;
+				border: thin solid #0d1f2d;
+				text-decoration: none;
+				text-align: center;
+				display: block;
+				margin: 3px;
+				width: 100px;
+				float: left;
+			}
+			nav .btn:hover {
+				background-color: #ffffff;
+				color: #013a33; 
+			}
+			body {
+				background-color: #ffe292;
+				font-family: Tahoma, helvetica, sans-serif;
+				color: #0d1f2d;
+				max-width: 1200px;
+				margin: 0 auto;
+			}	
+			strong{
+				font-size: large;
+			}
+			#menu{
+				background-color:#f0f8ff
+			}
+		</style>	
     </head> 
     
     <body>
@@ -15,17 +56,19 @@
 			<hr />
             <h1>Players student diner</h1>
         </header>
-
-        <nav>
-			<hr />
-			<a href="Rest1_homepage.html">Home</a>
-			<a href="">Menu</a>
-			<a href="Rest1_contact.html">Contact Us</a>
-			<hr />
-        </nav>
-		<section>
-			<article>
-				<table>
+		<div class="container-fluid">
+			<nav>
+				<a class="btn badge-pill" href="Rest1_homepage.html">Home</a>
+				<a class="btn badge-pill" href="">Menu</a>
+				<a class="btn badge-pill" href="Rest1_contact.html">Contact Us</a>
+				<div class="clear-float"></div>	
+			</nav>
+		</div>
+		<section id="menu">
+		
+			<article >
+			<h2> Meals</h2>
+				<!--<table>
 				<tr>
 					<td> <p><strong>Burger and Fries</strong> <br/> Come try a firm fave! Two patties in a classic style burger bun with chrispy fries. Optional side salad provided <br/>£6.00</p>	</td>
 					<td> <p><strong>Fish fingers and chips</strong> <br/> Blast of the past.This classic is just as it sounds <br/>£4.00</p>	</td>
@@ -36,7 +79,49 @@
 					<td> <p><strong>Stir fry rice</strong> <br/> Spicy vegatable stirfry mixed momentarily on the wok with rich rice and served straight to you at the table <br/>£5.00</p>	</td>
 					<td> <p><strong>Cheese toastie</strong> <br/> Beautiful applewood cheese with our fresh toastie bread melted for your pleasure <br/>£5.00</p>	</td>
 				</tr>	
-				<table>
+				<table>-->
+				
+				<div class="row" id="grid">				
+					<p class="col-lg col-md"><strong>Burger and Fries</strong> <br/> Come try a firm fave! Two patties in a classic style burger bun with chrispy fries. Optional side salad provided <br/>£6.00</p>	</td>
+					<p class="col-lg col-md"><strong>Fish fingers and chips</strong> <br/> Blast of the past.This classic is just as it sounds <br/>£4.00</p>	</td>
+					<p class="col-lg col-md"><strong>Coke float</strong> <br/>Vanilla ice cream floating on a foaming cola bed. What a delight!<br/>£1.00</p>	</td>
+				</div>
+				<div class="row" id="grid">		
+					<p class="col-lg col-md"><strong>Pasta bolognese</strong> <br/> Straight from Italy with the finest parmesan topping. Mario brings a classic recipe. <br/>£6.00</p>	</td>
+					<p class="col-lg col-md"><strong>Stir fry rice</strong> <br/> Spicy vegatable stirfry mixed momentarily on the wok with rich rice and served straight to you at the table <br/>£5.00</p>	</td>
+					<p class="col-lg col-md"><strong>Cheese toastie</strong> <br/> Beautiful applewood cheese with our fresh toastie bread melted for your pleasure <br/>£5.00</p>	</td>
+				
+				</div>
+			</article>
+			<article>
+				<h2> Beverages</h2>
+				<table class="table table-striped table-primary">
+					 <thead>
+						<tr>
+						  <th scope="col">Item</th>
+						  <th scope="col">Price</th>
+						</tr>
+					 </thead>
+					 <tbody>
+						<tr>
+						  <th scope="row">Root Beer</th>
+						  <td>&pound;3.00</td>
+
+						</tr>
+						<tr>
+						  <th scope="row">Bottled Water</th>
+						  <td>&pound;1.25</td>
+						</tr>
+						<tr>
+						  <th scope="row">Lemonade</th>
+						  <td>&pound;1.00</td>
+						</tr>
+						<tr>
+						  <th scope="row">Iced Tea</th>
+						  <td>&pound; 1.25 </td>
+						</tr>
+					 </tbody>
+				</table>
 			</article>
 		</section>
 
@@ -45,5 +130,10 @@
 			<label for="address"> Cheep food way,London,Greater London, SW62RS</label><br />
 			<label for="number"> 01372 890 421</label>
         </footer>
+			<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+	
     </body> 
 </html>
